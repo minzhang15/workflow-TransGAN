@@ -38,7 +38,7 @@ AFSD [36]    | -    | -    | 67.3 |62.4 | 55.5 |
 1. Get the code. We will call the directory that you cloned Caffe into $CAFFE_ROOT.<br />
       git clone https://github.com/minzhang15/workflow-detection.git<br />
       cd caffe<br />
-      git checkout enhanced-detector
+      git checkout workflow-detector
 
 2. Build the code. Please follow Caffe instruction to install all necessary packages and build it.<br />
             # Modify Makefile.config according to your Caffe installation.<br />
@@ -52,7 +52,7 @@ AFSD [36]    | -    | -    | 67.3 |62.4 | 55.5 |
             
 # Datasets
       To download the ground truth tubes, run the script: 
-      ./cache/fetch_cached_data.sh ${dataset_name} # dataset_name: UCFSports, JHMDB, UCF101
+      ./cache/fetch_cached_data.sh ${dataset_name} # dataset_name: POTFD, THUMOS, UCF101
 This will populate the cache folder with three pkl files, one for each dataset. For more details about the format of the pkl files, see enhanced-detector-scripts/Dataset.py.     
 
 If you want to reproduce exactly our results as reported in Tables 3 and 4, we also provide the RGB and flow files for the three datasets we use.
